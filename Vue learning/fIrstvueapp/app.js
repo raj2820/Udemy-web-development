@@ -1,3 +1,0 @@
-VTTCue.createApp({
-    
-})
