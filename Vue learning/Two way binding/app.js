@@ -8,21 +8,21 @@ const app = Vue.createApp({
   ,
   watch:{
 
-    name(value){
-if(value === '')
-      this.fullname = ''
-else
-      this.fullname=value +' '+'Shinde'
-    }
+//     name(value){
+// if(value === '')
+//       this.fullname = ''
+// else
+//       this.fullname=value +' '+'Shinde'
+//     }
 
   },computed:{
-    // fullname(){
-    //   if(this.name ===''){
-    //     return ''
-    //   }
+    fullname(){
+      if(this.name ===''){
+        return ''
+      }
 
-    //   return this.name + ' '+'Shinde'
-    // },
+      return this.name + ' '+'Shinde'
+    },
   },
   methods: {
     setName(event) {
